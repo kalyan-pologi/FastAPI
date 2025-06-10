@@ -1,0 +1,14 @@
+python -m venv fastapi-env
+
+Command Prompt (cmd.exe)or bash
+fastapi-env\Scripts\activate
+powershell
+.\fastapi-env\Scripts\Activate.ps1
+
+pip install fastapi
+
+pip install uvicorn
+
+pip install -r requirements.txt
+
+uvicorn blog.main:app --reload
