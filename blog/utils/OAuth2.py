@@ -3,8 +3,8 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from jose import jwt, JWTError
 from typing import Annotated
 from blog.utils.JWTtoken import SECRET_KEY, ALGORITHM
-from blog.schemas import TokenData
-from blog.database import get_db
+from blog.data.schemas import TokenData
+from blog.data.database import get_db
 from sqlalchemy.orm import Session
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")

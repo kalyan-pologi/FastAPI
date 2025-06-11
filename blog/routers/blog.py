@@ -1,6 +1,7 @@
+from blog.data import models
 from fastapi import APIRouter, Depends, HTTPException, status, Response
-from blog import schemas, models
-from blog.database import get_db
+from blog.data import schemas
+from blog.data.database import get_db
 from blog.repository import blog_repo
 from sqlalchemy.orm import Session
 from typing import List

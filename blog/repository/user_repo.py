@@ -1,6 +1,7 @@
+from blog.data import models
 from sqlalchemy.orm import Session
-from blog import schemas, models
-from blog.database import get_db    
+from blog.data import schemas
+from blog.data.database import get_db    
 from fastapi import Depends, HTTPException
 from blog.utils import hashing
 

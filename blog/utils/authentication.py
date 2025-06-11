@@ -1,11 +1,12 @@
+from blog.data import models
 from fastapi import APIRouter, status, Depends, HTTPException
-from blog import schemas, models
+from blog.data import schemas
 from blog.utils import hashing
-from blog.database import get_db
+from blog.data.database import get_db
 from sqlalchemy.orm import Session
 from blog.utils.JWTtoken import create_access_token, ACCESS_TOKEN_EXPIRE_MINUTES
 from datetime import timedelta
-from blog.schemas import Token
+from blog.data.schemas import Token
 from typing import List
 from fastapi.security import OAuth2PasswordRequestForm
 
