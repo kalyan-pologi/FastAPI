@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+
+# Virtual environment
+fastapi-env/
+.env
+
+# VS Code settings
+.vscode/
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+.idea/
